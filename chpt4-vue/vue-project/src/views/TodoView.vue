@@ -1,25 +1,19 @@
-<script>
-import { reactive } from 'vue'; // For state mgmt
-export default {
-  setup() { // only runs 1st time instance of component is created
-    const state = reactive({
-      todos: [],
-      newTodo: '',
+<script setup>
+  import { reactive } from 'vue'; // For state mgmt
+  const state = reactive({
+    todos: [],
+    newTodo: '',
+  })
+
+  function addTodo() {
+    state.todos.push({
+      title: state.newTodo,
+      done: false
     })
-
-    function addTodo() {
-      state.todos.push({
-        title: state.newTodo,
-        done: false
-      })
-      state.newTodo = ''
-    }
-
-    return { state, addTodo };
+    state.newTodo = ''
   }
-}
-
 </script>
+
 <template>
   <div>
     <h1>To-Do List</h1>
