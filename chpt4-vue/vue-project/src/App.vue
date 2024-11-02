@@ -14,6 +14,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/sheep">Sheep - Composition API</RouterLink>
         <RouterLink to="/todo">ToDo App</RouterLink>
+        <RouterLink to="/template">Template</RouterLink>
       </nav>
     </div>
   </header>
