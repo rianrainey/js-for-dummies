@@ -16,6 +16,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/todo">ToDo App</RouterLink>
         <RouterLink to="/template">Template</RouterLink>
         <RouterLink to="/computed">Computed</RouterLink>
+        <RouterLink to="/forms">Forms</RouterLink>
       </nav>
     </div>
   </header>
