@@ -31,6 +31,11 @@ const router = createRouter({
       path: '/template',
       name: 'template',
       component: () => import('../views/TemplateView.vue'),
+    },
+    {
+      path: '/computed',
+      name: 'computed',
+      component: () => import('../views/ComputedView.vue'),
     }
   ],
 })
